@@ -1,4 +1,4 @@
-var myQuestions = [
+var Allquestions = [
     {
       question: "What is the purpose of Article 1",
       answers: {
@@ -22,4 +22,31 @@ var myQuestions = [
     }
   ];
   
- 
+ var quiz = document.getElementById ('quiz');
+ var results = document.getElementById('results');
+ var submit = document.getElementById('submit');
+
+ function createQuiz(Allquestions, quiz,results, submit){
+
+    function showQuiz(questions,quiz){
+        var output =[];
+        var answers;
+   
+        for(var i=0; i< questions.length;i++){
+            answers =[];
+            
+            for(letter in questions[i].answers){
+                answers.push(
+                    '<label>'+ 
+                    '<input type="radio" name="question'+ i+
+                    '" value="'+ letter+'">'
+                    + letter + ': '
+                    + questions[i].answers[letter]
+                    + '</label>'
+                );
+            }
+
+        }
+    }
+    
+ }
