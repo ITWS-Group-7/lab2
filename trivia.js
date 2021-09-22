@@ -26,7 +26,7 @@ var Allquestions = [
  var results = document.getElementById('results');
  var submit = document.getElementById('submit');
 
-function createQuiz(Allquestions, quiz,results, submit){
+function createQuiz(questions, quiz,results, submit){
 
     function showQuiz(questions,quiz){
         var output =[];
@@ -58,7 +58,7 @@ function createQuiz(Allquestions, quiz,results, submit){
         var choice='';
         var correct = 0;
         for( var i=0; i<questions.length;i++){
-            
+            choice = (allAnswers[i].querySelector('input[name=question'+i+']:checked')||{})
         }
 
     }
