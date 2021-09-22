@@ -34,7 +34,7 @@ var Allquestions = [
    
         for(var i=0; i< questions.length;i++){
             answers =[];
-            
+
             for(letter in questions[i].answers){
                 answers.push(
                     '<label>'+ 
@@ -44,6 +44,8 @@ var Allquestions = [
                     + questions[i].answers[letter]
                     + '</label>'
                 );
+                output.push('<section class="question">' + questions[i].question + '</section>'
+                + '<section class="answers">' + answers.join('') + '</section>')
             }
 
         }
