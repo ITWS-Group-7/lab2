@@ -63,7 +63,7 @@ function createQuiz(questions, quiz,results, submit){
         if(choice==questions[i.correctAnswer]){
             correct++;
         }
-        else{
+        else{   
             correct+=0;
         }
     }
