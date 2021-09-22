@@ -52,7 +52,16 @@ function createQuiz(Allquestions, quiz,results, submit){
         quiz.innerHTML = output.join('');
     }
     
+    function showScore(questions, quiz, results){
+        var allAnswers = quiz.querySelectorAll('.answers');
 
+        var choice='';
+        var correct = 0;
+        for( var i=0; i<questions.length;i++){
+            
+        }
+
+    }
 
 
 
