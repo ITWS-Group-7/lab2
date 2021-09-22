@@ -26,7 +26,7 @@ var Allquestions = [
  var results = document.getElementById('results');
  var submit = document.getElementById('submit');
 
- function createQuiz(Allquestions, quiz,results, submit){
+function createQuiz(Allquestions, quiz,results, submit){
 
     function showQuiz(questions,quiz){
         var output =[];
@@ -44,11 +44,22 @@ var Allquestions = [
                     + questions[i].answers[letter]
                     + '</label>'
                 );
-                output.push('<section class="question">' + questions[i].question + '</section>'
-                + '<section class="answers">' + answers.join('') + '</section>')
+                
             }
-
+            output.push('<section class="question">' + questions[i].question + '</section>'
+                + '<section class="answers">' + answers.join('') + '</section>');
         }
+        quiz.innerHTML = output.join('');
     }
     
+
+
+
+
+
+
+
+
+
+
  }
