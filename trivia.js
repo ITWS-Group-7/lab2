@@ -26,8 +26,9 @@ var Allquestions = [
  var results = document.getElementById('results');
  var submit = document.getElementById('submit');
 
+ createQuiz(allQuestions, quiz, results, submit);
 function createQuiz(questions, quiz,results, submit){
-
+   
     function showQuiz(questions,quiz){
         var output =[];
         var answers;
@@ -58,7 +59,7 @@ function createQuiz(questions, quiz,results, submit){
         var choice='';
         var correct = 0;
         for( var i=0; i<questions.length;i++){
-            choice = (allAnswers[i].querySelector('name=question'+i)||{}).value;
+            choice = (allAnswers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
         }
         if(choice==questions[i.correctAnswer]){
             correct++;
@@ -69,7 +70,7 @@ function createQuiz(questions, quiz,results, submit){
     }
     results.innerHTML= correct +' out of '+ questions.length;
 
-    createQuiz(allQuestions, quiz, results, submit);
+    
     showQuiz(questions,quiz);
 
     submit.onclick = function(){
