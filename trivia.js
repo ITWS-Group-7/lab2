@@ -58,15 +58,23 @@ function createQuiz(questions, quiz,results, submit){
         var choice='';
         var correct = 0;
         for( var i=0; i<questions.length;i++){
-            choice = (allAnswers[i].querySelector('input[name=question'+i+']:checked')||{})
+            choice = (allAnswers[i].querySelector('name=question'+i)||{}).value;
         }
-
+        if(choice==questions[i.correctAnswer]){
+            correct++;
+        }
+        else{
+            correct+=0;
+        }
     }
+    results.innerHTML= correct +' out of '+ questions.length;
 
+    createQuiz(allQuestions, quiz, results, submit);
+    showQuiz(questions,quiz);
 
-
-
-
+    submit.onclick = function(){
+        showScore(questions, quiz, results);
+    }
 
 
 
