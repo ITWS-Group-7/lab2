@@ -22,6 +22,7 @@ h1{
 .links{
   float: right;
   bottom: 20px;
+  margin-right: 10px;
 }
 
 .container{
@@ -52,7 +53,7 @@ h1{
 display: none;
 overflow: hidden;
 background-color: #f1f1f1;
- height: 200px;
+ height: 385px;
 }
 
 .active, .button:hover{
@@ -89,7 +90,7 @@ background-color: #f1f1f1;
   margin-left: 270px;
   top: 90px;
   width: 200px;
-  height: 150px;
+  height: 180px;
   position: absolute;
   /*animation: slideleft;*/
   animation-duration: 5s;
@@ -152,27 +153,64 @@ background-color: #f1f1f1;
   height: 280px;
   width: 400px;
   position: absolute;
-  top: 20px;
+  top: 150px;
   left: 1005px;
 }
 
 
 .button{
-  background-color: red;
+  background-color: #0A3161;
   border-radius: 10%;
   border:none;
   height: 50px;
+  width: 100px;
   display: inline-block;
   font-family: 'Coming Soon', cursive;
+  color:#f1f1f1
 
 }
 
 .footer_img{
-  height: 500px;
+  height: 440px;
   margin-left: 420px;
+
 }
 
 
+.image-media{
+  height: 90px;
+  width: 120px;
+  padding-bottom: 1px;
+}
+
+.court{
+  height: 160px;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.states{
+  height: 120px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.learn_more{
+  margin-left: 400px;
+  margin-bottom: 80px;;
+  background-color:#B31942;
+  border-radius: 10%;
+  border: none;
+  float: right;
+
+
+
+  height: 50px;
+  width: 190px;
+  
+  font-family: 'Coming Soon', cursive;
+  color:#f1f1f1
+}
 
 @keyframes slideleft{
   from{transform:translateX(40px)}
