@@ -1,0 +1,27 @@
+body {
+    background-color:  #f3f6e7;
+    font-family:'Coming Soon', cursive;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+
+
+  button {
+    background-color: #0A3161;
+    border-radius: 10%;
+    border:none;
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    font-family: 'Coming Soon', cursive;
+    color:#f1f1f1
+  }
+
+  #result{
+
+    color:#B31942
+  }
